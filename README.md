@@ -1,50 +1,149 @@
-# Welcome to your Expo app 👋
+# 📱 SpotFix — Citizen Complaint Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+SpotFix is a mobile-first solution empowering citizens to raise, track, and resolve civic issues in their locality. It connects users with municipal authorities and ensures quick redressal of complaints like potholes, garbage dumps, waterlogging, and more.  
 
-## Get started
+Built with: React Native (Expo) · Firebase · Node.js (for admin dashboard)  
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+### User App (Mobile - Expo)
+- Raise Complaint: Upload issue photos, add details, and report location
+- Track Complaint: See real-time status, progress stages, and notifications
+- Nearby Issues: View reported problems in your area with map pins
+- Profile Section: Manage user details and complaint history
 
-   ```bash
-   npx expo start
-   ```
+### Admin Web Dashboard
+- Complaint Management: Assign, track, and resolve complaints
+- Analytics & Stats: Visual insights into area-wise complaint trends
+- User Management: Moderate users and handle feedback
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+| Area         | Technology     |
+|--------------|----------------|
+| Mobile App   | React Native (Expo) |
+| Backend      | Firebase (Auth, Firestore, Storage) |
+| Admin Panel  | React + Tailwind + Firebase |
+| Maps & Geo   | MapView (Expo), Geolocation API |
+| UI Kit       | NativeBase / React Native Elements |
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📁 Project Structure
 
-```bash
-npm run reset-project
+```
+spotfix/
+├── app/
+│   ├── (auth)/
+│   │   ├── login.js
+│   │   └── signup.js
+│   ├── (onboarding)/
+│   │   └── index.js
+│   ├── (profile-setup)/
+│   │   └── index.js
+│   ├── (tabs)/
+│   │   ├── home/
+│   │   │   └── index.js
+│   │   ├── raise/
+│   │   │   └── index.js
+│   │   ├── track/
+│   │   │   └── index.js
+│   │   ├── nearby/
+│   │   │   └── index.js
+│   │   ├── profile/
+│   │   │   └── index.js
+│   │   ├── _layout.js
+│   │   └── index.js
+│   └── _layout.js
+├── assets/
+│   ├── fonts/
+│   └── images/
+├── components/
+│   ├── auth/
+│   ├── common/
+│   └── onboarding/
+├── constants/
+│   ├── theme.js
+│   └── index.js
+├── hooks/
+│   └── useAuth.js
+├── services/
+│   ├── auth.js
+│   └── storage.js
+├── utils/
+│   └── helpers.js
+├── .gitignore
+├── app.json
+├── babel.config.js
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📱 App Navigation Structure
 
-## Learn more
+1. Onboarding Flow
+   - Welcome screens for first-time users
+   - App introduction and features
 
-To learn more about developing your project with Expo, look at the following resources:
+2. Authentication
+   - Login screen
+   - Sign up screen
+   - Password recovery
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. Profile Setup
+   - User details collection
+   - Location preferences
 
-## Join the community
+4. Main Tab Navigation
+   - Home: Dashboard with statistics
+   - Raise: Complaint submission form
+   - Track: List of user complaints
+   - Nearby: Map view of local issues
+   - Profile: User settings and info
 
-Join our community of developers creating universal apps.
+## 🚀 Getting Started
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Clone the repository
+```bash
+git clone https://github.com/codebanditssss/HACKVORTEX_SPOTFIX.git
+cd HACKVORTEX_SPOTFIX
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npx expo start
+```
+
+4. Run on your device
+   - Scan QR code with Expo Go app (Android)
+   - Press 'i' for iOS simulator
+   - Press 'a' for Android emulator
+
+## 📄 Environment Setup
+
+1. Node.js & npm
+2. Expo CLI
+3. Android Studio (for emulator)
+4. Xcode (for iOS development, Mac only)
+5. Firebase project configuration
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a pull request
+
+## 📝 License
+
+This project is licensed under the MIT License.
