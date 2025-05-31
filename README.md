@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📱 SpotFix — Citizen Complaint Management App
 
 SpotFix is a mobile-first solution empowering citizens to raise, track, and resolve civic issues in their locality. It connects users with municipal authorities and ensures quick redressal of complaints like potholes, garbage dumps, waterlogging, and more.  
@@ -147,3 +148,6 @@ npx expo start
 ## 📝 License
 
 This project is licensed under the MIT License.
+=======
+# HACKVORTEX_SPOTFIX
+>>>>>>> 4036428ebd02273683d48400951b317c172e2574
